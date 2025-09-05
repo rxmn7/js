@@ -1,12 +1,22 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="script.js"></script>
 <body>
-    java script 
+    <script>
+        let ism = prompt("Ismingizni kiriting:");
+        let harf = prompt("Qaysi harfni tekshirmoqchisiz?");
+        if (ism && harf) {
+            if (ism.toLowerCase().includes(harf.toLowerCase())) {
+                alert(`${ism}da ${harf} harfi mavjud`);
+            } else {
+                alert(`${ism}da ${harf} harfi mavjud emas`);
+            }
+        } else {
+            alert("Ism yoki harf kiritilmadi");
+        }
+    </script>
 </body>
 </html>
